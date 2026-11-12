@@ -1,5 +1,5 @@
 /**
- * DeepGuard AI — Google Meet Content Script
+ * Trustlens — Google Meet Content Script
  * 
  * Injected into https://meet.google.com/*
  * Responsibilities:
@@ -42,7 +42,7 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
-            <span class="dg-title">DeepGuard AI</span>
+            <span class="dg-title">Trustlens</span>
           </div>
           <span class="dg-status-pill" id="dg-pill">STANDBY</span>
           <button class="dg-toggle-btn" id="dg-toggle" title="Minimize/Expand">_</button>

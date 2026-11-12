@@ -1,11 +1,11 @@
 /**
- * DeepGuard AI — Logger
+ * Trustlens — Logger
  * Unified, prefixed console logging for all extension modules.
  * Can be silenced in production by setting DEEPGUARD_DEBUG=false in storage.
  */
 
 const Logger = (() => {
-  const PREFIX   = '[DeepGuard]';
+  const PREFIX   = '[Trustlens]';
   const STYLES = {
     info:    'color:#00d4ff;font-weight:600',
     warn:    'color:#f59e0b;font-weight:600',

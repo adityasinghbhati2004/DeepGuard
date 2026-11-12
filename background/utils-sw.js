@@ -1,10 +1,10 @@
 /**
- * DeepGuard AI — Service Worker Constants & Utilities
+ * Trustlens — Service Worker Constants & Utilities
  * Provides global configuration and helpers for the ES Module Service Worker.
  */
 
 export const DEEPGUARD = {
-  NAME: 'DeepGuard AI',
+  NAME: 'Trustlens',
   VERSION: '1.0.0',
 
   RISK: {

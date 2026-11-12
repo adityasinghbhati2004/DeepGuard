@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DeepGuard AI",
+  "name": "Trustlens",
   "version": "1.0.0",
   "description": "Real-time deepfake detection for live video calls. Analyses facial manipulation risk during Google Meet and other video communication platforms.",
 
@@ -18,7 +18,7 @@
       "48":  "assets/icons/icon48.png",
       "128": "assets/icons/icon128.png"
     },
-    "default_title": "DeepGuard AI"
+    "default_title": "Trustlens"
   },
 
   "background": {
