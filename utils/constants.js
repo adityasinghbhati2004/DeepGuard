@@ -1,12 +1,12 @@
 /**
- * Trustlens — Constants
+ * DeepGuard — Constants
  * Shared configuration used across all extension modules.
  */
 
 const DEEPGUARD = {
 
   // ── Extension identity ──────────────────────────────────
-  NAME:    'Trustlens',
+  NAME:    'DeepGuard',
   VERSION: '1.0.0',
 
   // ── Risk levels ─────────────────────────────────────────

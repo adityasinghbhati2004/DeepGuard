@@ -1,5 +1,5 @@
 /**
- * Trustlens — Offscreen Inference Engine
+ * DeepGuard — Offscreen Inference Engine
  * 
  * Runs in the Chrome offscreen document context with full DOM & Canvas access.
  * Handles:

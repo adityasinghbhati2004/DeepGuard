@@ -1,7 +1,7 @@
-# Trustlens — Chrome Browser Extension
+# DeepGuard — Chrome Browser Extension
 ### Real-Time Deepfake Detection System for Live Video Calls (Google Meet)
 
-Trustlens is a production-ready Chromium browser extension built with **Manifest V3**. It detects potential synthetic media and deepfake face manipulation in real time during live Google Meet calls and presents active security metrics, risk telemetry, and threat warning alerts.
+DeepGuard is a production-ready Chromium browser extension built with **Manifest V3**. It detects potential synthetic media and deepfake face manipulation in real time during live Google Meet calls and presents active security metrics, risk telemetry, and threat warning alerts.
 
 ---
 
@@ -28,14 +28,14 @@ Trustlens is a production-ready Chromium browser extension built with **Manifest
    ```
    c:\Users\bhati\OneDrive\Desktop\editing raw\mothherhood\raw\deepguard-extension
    ```
-6. Trustlens is now loaded and will appear in your Chrome toolbar!
+6. DeepGuard is now loaded and will appear in your Chrome toolbar!
 
 ---
 
 ## 🎥 How to Use in Real Time
 
 1. Start or join any video call on [Google Meet](https://meet.google.com).
-2. Click the **Trustlens shield icon** in your Chrome extension toolbar.
+2. Click the **DeepGuard shield icon** in your Chrome extension toolbar.
 3. The popup will automatically detect that Google Meet is active (showing a green status dot).
 4. Click **Start Monitoring**:
    - The in-call HUD overlay will appear in the bottom-left of your Google Meet screen.
@@ -77,4 +77,4 @@ deepguard-extension/
 
 ## ⚖️ Disclaimer
 
-Trustlens provides automated risk indicators of potential synthetic facial manipulation. Results are probabilistic forensic indicators intended to assist human verification, not definitive legal proof of fraud or identity theft.
+DeepGuard provides automated risk indicators of potential synthetic facial manipulation. Results are probabilistic forensic indicators intended to assist human verification, not definitive legal proof of fraud or identity theft.

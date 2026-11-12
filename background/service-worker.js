@@ -1,5 +1,5 @@
 /**
- * Trustlens — Background Service Worker (Manifest V3)
+ * DeepGuard — Background Service Worker (Manifest V3)
  *
  * Responsibilities:
  *  - Manage extension lifecycle and session state
@@ -52,13 +52,13 @@ async function closeOffscreen() {
 
 // ── Logging helper ─────────────────────────────────────────────
 function swLog(...args) {
-  console.log('[Trustlens SW]', ...args);
+  console.log('[DeepGuard SW]', ...args);
 }
 function swWarn(...args) {
-  console.warn('[Trustlens SW]', ...args);
+  console.warn('[DeepGuard SW]', ...args);
 }
 function swError(...args) {
-  console.error('[Trustlens SW]', ...args);
+  console.error('[DeepGuard SW]', ...args);
 }
 
 // ── Badge helpers ──────────────────────────────────────────────
@@ -91,7 +91,7 @@ function sendRiskNotification(result) {
   chrome.notifications.create(`deepguard-alert-${now}`, {
     type:     'basic',
     iconUrl:  'assets/icons/icon128.png',
-    title:    '⚠ Trustlens — High Risk Detected',
+    title:    '⚠ DeepGuard — High Risk Detected',
     message:  `Potential deepfake manipulation detected.\nRisk Score: ${Math.round(result.score * 100)}%\nPlatform: ${state.platform ?? 'Unknown'}`,
     priority: 2,
   });

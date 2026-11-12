@@ -1,5 +1,5 @@
 /**
- * Trustlens — Injected Script Bridge
+ * DeepGuard — Injected Script Bridge
  * Allows safe inspection of WebRTC peer connections or direct stream metadata if needed.
  */
-window.__TRUSTLENS_INJECTED__ = true;
+window.__DEEPGUARD_INJECTED__ = true;
