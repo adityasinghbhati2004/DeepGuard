@@ -1,0 +1,12 @@
+# Logs and temp files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Local configuration overrides
+.env
+.env.local

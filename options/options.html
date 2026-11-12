@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DeepGuard AI — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <h1>DeepGuard AI Settings</h1>
+      </div>
+      <p class="subtitle">Configure real-time deepfake detection sensitivity, notifications, and platform preferences.</p>
+    </header>
+
+    <div class="card">
+      <h2>Detection Thresholds</h2>
+      <div class="form-group">
+        <label for="sampleRate">Frame Sample Rate (FPS)</label>
+        <select id="sampleRate">
+          <option value="200">5 FPS (Recommended - Balanced)</option>
+          <option value="100">10 FPS (High Accuracy - Higher CPU)</option>
+          <option value="500">2 FPS (Low Power Mode)</option>
+        </select>
+        <span class="hint">Controls how often video frames are captured and analyzed from Google Meet.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="highThreshold">High Threat Threshold</label>
+        <input type="range" id="highThreshold" min="50" max="90" value="60">
+        <span class="value-display" id="highVal">60%</span>
+        <span class="hint">Triggers the critical red alert banner when confidence exceeds this value.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Notifications & Display</h2>
+      <div class="checkbox-group">
+        <input type="checkbox" id="showOverlay" checked>
+        <label for="showOverlay">Display floating in-call HUD overlay in Google Meet</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="notificationsOn" checked>
+        <label for="notificationsOn">Show Chrome desktop notifications on high-risk detection</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="autoStartOnMeet">
+        <label for="autoStartOnMeet">Automatically start monitoring when joining a Google Meet call</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>PyTorch Backend Integration (Optional)</h2>
+      <div class="form-group">
+        <label for="backendUrl">WebSocket Server Endpoint</label>
+        <input type="text" id="backendUrl" value="ws://localhost:8000/ws/detect">
+        <span class="hint">If running the local Python FastAPI server, the extension connects automatically for neural network inference.</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" id="btnSave">Save Settings</button>
+      <span class="saved-msg" id="savedMsg">Settings saved successfully!</span>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
